@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+     <header>
+        <div class="flex justify-around bg-violet-500 py-2">
+            <div class="flex items-center gap-2">
+            <img class="w-4 h-4" src="images/envlope.jpg" alt="messagelogo">
+            <p class=" text-white">NaxioAR@gmail.com</p>
+            </div>
+
+            <p class=" text-white">(12345)67890</p>
+        </div>
+        <nav class="flex justify-around pt-4 items-center">
+            <a href=""><h2 class="text-3xl font-bold">Nexio</h2></a>
+            <ul class="flex gap-9 pt-1">
+                <li><a href="">Home</a></li>
+                <li><a href="">Store</a></li>
+                <li><a class="hover:underline" href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <a href=""><img class="w-8 h-auto" src="images/Frame 12.png" alt="Cart"></a>
+        </nav>
+    </header> 
+    <section id="ShopeSection" class="h-[25vh] w-full bg-[#fff5f8] py-12 px-20 md:px-40 lg:px-80">
+        <h3 class="text-[#1A0B5B] font-[Josefin Sans] text-4xl md:text-5xl lg:text-6xl font-bold">Shop</h3>
+        <div class="homeShope flex flex-col md:flex-row text-[Josefin Sans] text-xl md:text-2xl">
+            <p>Home > <span id="Shope" class="text-[#FB2E86]">Shop</span></p>
+        </div>
+    </section>
+    
+    <section id="containerProduit" class="mt-6 mb-6 mx-4 md:mx-12 lg:mt-[60px] lg:mb-[60px] lg:mx-[100px]">
+        <div class="Divsort flex flex-col md:flex-row justify-between mb-8">
+            <p class="text-[#1A0B5B] text-xl md:text-2xl font-[Josefin Sans]">
+                All the Best Products Just in one click
+            </p>
+            <div class="sort flex flex-col md:flex-row md:gap-3">
+                <h6 class="mt-1 text-[#3F509E] font-[Lato]">Sort by</h6>
+                <select class="border-2 border-[#8A8FB9] text-[#8A8FB9] py-1 px-3">
+                    <option value="">Categories</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="produits  h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-9">
+            <!-- Product Cards -->
+            <div class="div p-4 bg-white rounded shadow-md">
+                <img src="images/pc.png" alt="pc" class="w-full h-auto">
+                <div class="flex justify-between mt-2">
+                    <p class="text-[Josefin Sans] text-lg lg:text-xl text-[#1A0B5B]">Laptop Dell</p>
+                    <p class="text-[Josefin Sans] text-lg lg:text-xl text-[#1A0B5B]">$120.00</p>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <button class="bg-[#1A0B5B] text-white px-4 py-2 lg:px-6 lg:py-2">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="div p-4 bg-white rounded shadow-md">
+                <img src="images/pc.png" alt="pc" class="w-full h-auto">
+                <div class="flex justify-between mt-2">
+                    <p class="text-[Josefin Sans] text-lg lg:text-xl text-[#1A0B5B]">Laptop Dell</p>
+                    <p class="text-[Josefin Sans] text-lg lg:text-xl text-[#1A0B5B]">$120.00</p>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <button class="bg-[#1A0B5B] text-white px-4 py-2 lg:px-6 lg:py-2">Add to cart</button>
+                </div>
+            </div>
+
+
+            <div class="div p-4 bg-white rounded shadow-md">
+                <img src="images/pc.png" alt="pc" class="w-full h-auto">
+                <div class="flex justify-between mt-2">
+                    <p class="text-[Josefin Sans] text-lg lg:text-xl text-[#1A0B5B]">Laptop Dell</p>
+                    <p class="text-[Josefin Sans] text-lg lg:text-xl text-[#1A0B5B]">$120.00</p>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <button class="bg-[#1A0B5B] text-white px-4 py-2 lg:px-6 lg:py-2">Add to cart</button>
+                </div>
+            </div>
+            
+            
+            <!-- Repeat for other products -->
+        </div>
+    
+        <div class="NextPrevous flex justify-center items-center mt-6 gap-6">
+            <button class="bg-[#1A0B5B] text-white px-8 py-2 md:px-12 md:py-3 rounded-full">Next</button>
+            <p class="mt-2 text-sm md:text-base">Page 1 of 3</p>
+            <button class="bg-[#1A0B5B] text-white px-8 py-2 md:px-12 md:py-3 rounded-full">Previous</button>
+        </div>
+    </section>
+    
+   <!-- <section id="ShopeSection" class="h-[25vh] w-full bg-[#fff5f8] py-12 px-80">
+        <h3 class="text-[#1A0B5B] font-[Josefin Sans] text-6xl font-bold">Shop</h3>
+        <div class="homeShope flex text-[Josefin Sans] text-2xl">
+            <p>Home > <p id="Shope" class="text-[#FB2E86]">Shop</p></p>
+        </div>
+    </section>
+    
+    <section id="containerProduit" class="mt-[60px] mb-[60px] mx-[100px]">
+        <div class="Divsort flex justify-between mb-8">
+            <p class="text-[#1A0B5B] text-2xl font-[Josefin Sans]">All the Best Products Just in one click</p>
+            <div class="sort flex gap-3">
+                <h6 class="mt-1 text-[#3F509E] font-[Lato]">Sort by</h6>
+                <select class="border-2 border-[#8A8FB9] text-[#8A8FB9] py-1 px-3">
+                    <option value="">Categories</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="produits bg-[#FB2E86] h-[1000px] grid grid-cols-3 gap-9">
+           
+             <div class="div">
+            <img src="images/pc.png" alt="pc">
+            <div class="flex justify-between">
+                <p class="text-[Josefin Sans] text-xl text-[#1A0B5B]">Laptop Dell</p>
+                <p class="text-[Josefin Sans] text-[#1A0B5B]">120.00$</p>
+                
+            </div>
+            <div class="flex justify-center">
+            <button class="bg-[#1A0B5B] text-white px-6 py-2 self-center">Add to cart</button>
+            </div>
+            </div>
+            <div class="div">
+            <img src="images/home.png" alt="pc">
+            <div class="flex justify-between">
+                <p class="text-[Josefin Sans] text-xl text-[#1A0B5B]">Laptop Dell</p>
+                <p class="text-[Josefin Sans] text-[#1A0B5B]">120.00$</p>
+                
+            </div>
+            <div class="flex justify-center">
+            <button class="bg-[#1A0B5B] text-white px-6 py-2 self-center">Add to cart</button>
+            </div>
+            </div>
+            <div class="div">
+            <img src="images/server.png" alt="pc">
+            <div class="flex justify-between">
+                <p class="text-[Josefin Sans] text-xl text-[#1A0B5B]">Laptop Dell</p>
+                <p class="text-[Josefin Sans] text-[#1A0B5B]">120.00$</p>
+                
+            </div>
+            <div class="flex justify-center">
+            <button class="bg-[#1A0B5B] text-white px-6 py-2 self-center">Add to cart</button>
+            </div>
+            </div>
+        </div>
+    
+        <div class="NextPrevous flex justify-center items-center mt-6 gap-6">
+            <button class="bg-[#1A0B5B] text-white px-12 py-3 rounded-full">Next</button>
+            <p class="mt-2">Page 1 of 3</p>
+            <button class="bg-[#1A0B5B] text-white px-12 py-3 rounded-full">Previous</button>
+        </div>
+    </section> -->
+
+    <!-- <header>
+        <div class="flex flex-wrap justify-between bg-violet-500 py-2 px-4">
+            <div class="flex items-center gap-2">
+                <img class="w-4 h-4" src="images/envlope.jpg" alt="messagelogo">
+                <p class="text-white">NaxioAR@gmail.com</p>
+            </div>
+            <p class="text-white">(12345)67890</p>
+        </div>
+        <nav class="flex flex-wrap justify-between items-center pt-4">
+            <a href=""><h2 class="text-3xl font-bold">Nexio</h2></a>
+            <ul class="flex gap-9 pt-1">
+                <li><a href="">Home</a></li>
+                <li><a class="hover:underline" href="">Store</a></li>
+                <li><a  href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <a href=""><img class="w-8 h-auto" src="images/Frame 12.png" alt="Cart"></a>
+        </nav>
+    </header>
+
+    <section id="ShopeSection" class="h-[25vh] w-full bg-[#fff5f8] py-12 px-6 md:px-16">
+        <h3 class="text-[#1A0B5B] font-[Josefin Sans] text-6xl md:text-7xl font-bold">Shop</h3>
+        <div class="homeShope flex text-[Josefin Sans] text-2xl">
+            <p>Home > <p id="Shope" class="text-[#FB2E86]">Shop</p></p>
+        </div>
+    </section>
+
+    <section id="containerProduit" class="mt-[60px] mb-[60px] mx-4 md:mx-[100px]">
+        <div class="Divsort flex flex-wrap justify-between mb-8">
+            <p class="text-[#1A0B5B] text-2xl font-[Josefin Sans]">All the Best Products Just in one click</p>
+            <div class="sort flex gap-3">
+                <h6 class="mt-1 text-[#3F509E] font-[Lato]">Sort by</h6>
+                <select class="border-2 border-[#8A8FB9] text-[#8A8FB9] py-1 px-3">
+                    <option value="">Categories</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="produits bg-[#FB2E86] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+            <div class="div bg-white p-4 rounded-lg shadow-lg">
+                <img src="images/pc.png" alt="pc" class="w-full h-auto rounded-lg">
+                <div class="flex justify-between mt-4">
+                    <p class="text-[Josefin Sans] text-xl text-[#1A0B5B]">Laptop Dell</p>
+                    <p class="text-[Josefin Sans] text-[#1A0B5B]">120.00$</p>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <button class="bg-[#1A0B5B] text-white px-6 py-2 rounded-full">Add to cart</button>
+                </div>
+            </div>
+        
+            <div class="div bg-white p-4 rounded-lg shadow-lg">
+                <img src="images/home.png" alt="pc" class="w-full h-auto rounded-lg">
+                <div class="flex justify-between mt-4">
+                    <p class="text-[Josefin Sans] text-xl text-[#1A0B5B]">Laptop Dell</p>
+                    <p class="text-[Josefin Sans] text-[#1A0B5B]">120.00$</p>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <button class="bg-[#1A0B5B] text-white px-6 py-2 rounded-full">Add to cart</button>
+                </div>
+            </div>
+        
+            <div class="div bg-white p-4 rounded-lg shadow-lg">
+                <img src="images/server.png" alt="pc" class="w-full h-auto rounded-lg">
+                <div class="flex justify-between mt-4">
+                    <p class="text-[Josefin Sans] text-xl text-[#1A0B5B]">Laptop Dell</p>
+                    <p class="text-[Josefin Sans] text-[#1A0B5B]">120.00$</p>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <button class="bg-[#1A0B5B] text-white px-6 py-2 rounded-full">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="NextPrevous flex justify-center items-center mt-6 gap-6">
+            <button class="bg-[#1A0B5B] text-white px-12 py-3 rounded-full">Next</button>
+            <p class="mt-2">Page 1 of 3</p>
+            <button class="bg-[#1A0B5B] text-white px-12 py-3 rounded-full">Previous</button>
+        </div>
+    </section> -->
+    
+    
+
+    <!-- <footer>
+        <div class="conainerFooter">
+            <div class="contentFooter">
+            <div class="NexioDiv">
+                <input type="email" name="" id="" placeholder="Enter Email Address">
+                <button>Sing Up</button>
+                <p>Contact Info<br> Just a test</p>
+            </div>
+
+            <div class="Catagories">
+                
+            </div>
+            </div>
+            <div class="copyright"></div>
+        </div>
+    </footer> -->
+</body>
+</html>
